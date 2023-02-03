@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
@@ -16,7 +17,8 @@ function App() {
   }
   
   return (
-    <div className="App">
+    <div className="App h-screen overflow-auto">
+      <Navbar />
       <Home />
       <About />
       <Experience />
