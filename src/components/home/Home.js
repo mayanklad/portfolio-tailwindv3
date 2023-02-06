@@ -19,9 +19,9 @@ function Home() {
     <div className='home-container h-full w-full flex flex-row bg-green-200'>
       <div className='m-2.5 w-full flex justify-center items-center bg-red-200'>
         <div className='headings-container w-fit h-fit mx-5'>
-          <h3 className='w-fit text-base'>Hi, I'm</h3>
-          <h1 className='w-fit text-4xl'>Mayank Lad</h1>
-          <h2 className='w-fit text-xl'>Building Better World One Syntax at a Time</h2>
+          <h3 className='w-fit'>Hi, I'm</h3>
+          <h1 className='w-fit'>Mayank Lad</h1>
+          <h2 className='w-fit'>Building Better World One Syntax at a Time</h2>
         </div>
       </div>
     </div>
