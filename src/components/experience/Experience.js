@@ -19,12 +19,12 @@ function Experience() {
         <p className='w-full'>Computer science graduate looking to obtain the position of software developer. I want to work with an organization that can give me ample opportunities to grow so that i will be able to help in the growth of that organization and will be able to enhance my skills and my capabilities.</p>
         
         <VerticalTimeline>
-          {timelineElements.map((element) => {
+          {timelineElements.map((element, index) => {
             let isWorkIcon = element.icon === "work";
 
             return (
               <VerticalTimelineElement
-                key={element.key}
+                key={index}
                 date={element.date}
                 dateClassName="date"
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
@@ -36,7 +36,7 @@ function Experience() {
                 <h5 className="vertical-timeline-element-subtitle">
                   {element.location}
                 </h5>
-                <p id="description">{element.description}</p>
+                <p className="description">{element.description}</p>
               </VerticalTimelineElement>
             );
           })}
