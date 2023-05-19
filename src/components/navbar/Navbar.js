@@ -28,9 +28,9 @@ function Navbar() {
   });
 
   return (
-    <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-red-500 justify-between items-center transition duration-700 ${scrolling ? 'opacity-100' : 'opacity-0'}`}>
-      <span className='border-2'>Logo</span>
-      <nav className={`menu-container absolute top-[60px] w-full bg-blue-500 transition duration-700 ${isNavbarOpen ? 'opacity-100' : 'opacity-0'}`}>
+    <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-red-500 justify-between items-center transition duration-700 ${scrolling ? 'opacity-100' : 'opacity-0 -z-50'}`}>
+      <span>Logo</span>
+      <nav className={`menu-container absolute top-[60px] w-full bg-blue-500 transition duration-700 ${isNavbarOpen ? 'opacity-100' : 'opacity-0 -z-50'}`}>
         <ul className='menu flex flex-col justify-evenly'>
           <li className='menu-item'><a href="#">Home</a></li>
           <li className='menu-item'><a href="#">About</a></li>
@@ -39,18 +39,18 @@ function Navbar() {
         </ul>
       </nav>
       <div className='buttons-container bg-green-500'>
-        <button type='button' className='hire-button border-2'>
-           Hire me
-         </button>
-         <button type='button' className='resume-button border-2'>
-           Resume
-         </button>
-         <button type='button' className='theme-button border-2'>
-           Theme
-         </button>
-         <button type='button' className='menu-button border-2' onClick={toggleNavbar}>
-             X
-         </button>
+        <button type='button' className='hire-button'>
+          Hire me
+        </button>
+        <button type='button' className='resume-button'>
+          Resume
+        </button>
+        <button type='button' className='theme-button'>
+          Theme
+        </button>
+        <button type='button' className='menu-button' onClick={toggleNavbar}>
+            X
+        </button>
       </div>
     </header>
   );
