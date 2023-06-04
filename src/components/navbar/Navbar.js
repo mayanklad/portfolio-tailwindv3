@@ -28,9 +28,9 @@ function Navbar() {
   });
 
   return (
-    <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-red-500 justify-between items-center transition duration-700 ${scrolling ? 'opacity-100' : 'opacity-0 -z-50'}`}>
+    <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-red-500 justify-between items-center transition duration-700 ${scrolling ? 'opacity-100 z-10' : 'opacity-0 -z-50'}`}>
       <span>Logo</span>
-      <nav className={`menu-container absolute top-[60px] w-full bg-blue-500 transition duration-700 ${isNavbarOpen ? 'opacity-100' : 'opacity-0 -z-50'}`}>
+      <nav className={`menu-container absolute top-[60px] w-full bg-blue-500 transition duration-700 ${isNavbarOpen ? 'opacity-100 z-10' : 'opacity-0 -z-50'}`}>
         <ul className='menu flex flex-col justify-evenly'>
           <li className='menu-item'><a href="#">Home</a></li>
           <li className='menu-item'><a href="#">About</a></li>
