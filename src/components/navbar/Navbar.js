@@ -1,6 +1,6 @@
 import './navbar.css';
 import React, { useState, useEffect }  from 'react';
-
+import { Bars3Icon } from '@heroicons/react/24/solid'
 
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -38,7 +38,7 @@ function Navbar() {
           <li className='menu-item'><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <div className='buttons-container bg-green-500'>
+      <div className='buttons-container flex flex-row items-center bg-green-500'>
         <button type='button' className='hire-button'>
           Hire me
         </button>
@@ -49,7 +49,7 @@ function Navbar() {
           Theme
         </button>
         <button type='button' className='menu-button' onClick={toggleNavbar}>
-            X
+          <Bars3Icon className='w-6 text-black' />
         </button>
       </div>
     </header>
