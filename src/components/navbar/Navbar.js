@@ -29,27 +29,27 @@ function Navbar() {
   });
 
   return (
-    <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-red-500 justify-between items-center [transition:opacity_700ms,visibility_700ms] ${scrolling | isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
-      <span>Logo</span>
-      <nav className={`menu-container absolute top-[60px] w-full bg-blue-500 [transition:opacity_700ms,visibility_700ms] ${isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
+    <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-white justify-between items-center [transition:opacity_700ms,visibility_700ms] ${scrolling | isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
+      <span className='mx-5'>Logo</span>
+      <nav className={`menu-container absolute top-[60px] w-full bg-white border-t border-solid [transition:opacity_700ms,visibility_700ms] ${isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
         <ul className='menu flex flex-col justify-evenly'>
-          <li className='menu-item'><a href="#">Home</a></li>
-          <li className='menu-item'><a href="#">About</a></li>
-          <li className='menu-item'><a href="#">Projects</a></li>
-          <li className='menu-item'><a href="#">Contact</a></li>
+          <li className='menu-item'><a href="#home"><b>Home</b></a></li>
+          <li className='menu-item'><a href="#about"><b>About</b></a></li>
+          <li className='menu-item'><a href="#projects"><b>Projects</b></a></li>
+          <li className='menu-item'><a href="#contact"><b>Contact</b></a></li>
         </ul>
       </nav>
-      <div className='buttons-container flex flex-row items-center bg-green-500'>
-        <button type='button' className='hire-button'>
+      <div className='buttons-container flex flex-row items-center mx-5'>
+        <button type='button' className='hire-button bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
           Hire me
         </button>
-        <button type='button' className='resume-button'>
+        <button type='button' className='resume-button ml-2.5'>
           Resume
         </button>
-        <button type='button' className='theme-button'>
+        <button type='button' className='theme-button ml-2.5'>
           <MoonIcon className='w-6 text-black' />
         </button>
-        <button type='button' className='menu-button' onClick={toggleNavbar}>
+        <button type='button' className='menu-button ml-2.5' onClick={toggleNavbar}>
           <Bars3Icon className='w-6 text-black' />
         </button>
       </div>
