@@ -28,8 +28,8 @@ function Portfolio() {
   }, []);
 
   return (
-    <div className='portfolio-container px-2.5 py-6 w-full'>
-      <h1 className='px-3.5'>Portfolio</h1>
+    <div id='projects' className='portfolio-container px-2.5 py-6 w-full'>
+      <h1 className='px-3.5'>Projects</h1>
       <div className='content px-3.5 w-full flex flex-col items-center'>
         <div className='flex flex-row flex-wrap'>
           {data.map((project) => {
