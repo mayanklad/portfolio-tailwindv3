@@ -44,9 +44,9 @@ function Portfolio() {
                   src={project.imgUrl}
                   alt={project.name}
                 ></img>
-                <div className='absolute w-full h-full bg-[#5988ff] opacity-0 -z-10 group-hover:opacity-80 transition duration-500 ease-in'></div>
-                <div className='flex flex-col p-5 w-full h-full items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in'>
-                  <div>{project.name}</div>
+                <div className='absolute w-full h-full bg-[#5988ff] -z-10 opacity-70 md:opacity-0 md:group-hover:opacity-70 md:transition md:duration-500 md:ease-in'></div>
+                <div className='flex flex-col p-5 w-full h-full items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 md:transition md:duration-500 md:ease-in'>
+                  <div className='text-center'>{project.name}</div>
                 </div>
               </div>
             );
