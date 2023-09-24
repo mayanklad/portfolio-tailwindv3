@@ -12,7 +12,7 @@ function Contact() {
         <p className='w-full'>
           I would love to hear from you! Whether you have a project idea, a question, or just want to chat, feel free to reach out.
         </p>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-row flex-wrap w-full justify-evenly items-center'>
           <a title='Email' className='flex items-center h-14 w-14 mb-3.5' href='mailto:mayanklad12@gmail.com' target='_blank' rel='noreferrer'>
             <img className='m-0' src={emailIcon} alt='Email' />
           </a>
