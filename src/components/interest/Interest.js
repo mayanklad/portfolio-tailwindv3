@@ -12,7 +12,7 @@ function Interest() {
     <div id='interests' className="interest-container px-2.5 py-6 w-full">
       <h1 className='px-3.5'>Areas of Interest</h1>
       <div className='content px-3.5 w-full flex flex-col items-center'>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center my-4'>
           {interests.map((interest, index) => {
             return (
               <div key={index}>{interest}</div>
