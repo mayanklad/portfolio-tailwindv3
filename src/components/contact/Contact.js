@@ -7,7 +7,7 @@ import instagramIcon from 'assets/images/instagram-icon.svg'
 function Contact() {  
   return (
     <div id='contact' className='contact-container px-2.5 py-6 w-full bg-[#c4d6e2]'>
-      <h1 className='px-3.5'>Contact</h1>
+      <h1 className='px-3.5 underline underline-offset-[12px]'>Contact</h1>
       <div className='content px-3.5 w-full flex flex-col items-center'>
         <p className='w-full'>
           I would love to hear from you! Whether you have a project idea, a question, or just want to chat, feel free to reach out.

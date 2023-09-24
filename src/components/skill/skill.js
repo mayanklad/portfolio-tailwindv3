@@ -4,7 +4,7 @@ import skillData from './skillData';
 function Skill() {
   return (
     <div id='skills' className='skill-container px-2.5 py-6 w-full bg-[#c4d6e2]'>
-      <h1 className='px-3.5'>Skills</h1>
+      <h1 className='px-3.5 underline underline-offset-[12px]'>Skills</h1>
       <div className='content px-3.5 w-full flex flex-col items-center'>
         <div className='flex flex-row flex-wrap my-4'>
           {skillData.map((skill, index) => {
