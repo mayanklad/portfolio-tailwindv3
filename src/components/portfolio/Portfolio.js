@@ -35,9 +35,12 @@ function Portfolio() {
         <div className='flex flex-row flex-wrap'>
           {portfolioData.map((project, index) => {
             return (
-              <div
+              <a
                 key={index}
                 className='group relative w-full aspect-video mb-2.5'
+                href={project.url}
+                target='_blank'
+                rel='noreferrer'
               >
                 <img
                   className='absolute w-full h-full m-0 -z-20' 
@@ -48,7 +51,7 @@ function Portfolio() {
                 <div className='flex flex-col p-5 w-full h-full items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 md:transition md:duration-500 md:ease-in'>
                   <div className='text-center'>{project.name}</div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
