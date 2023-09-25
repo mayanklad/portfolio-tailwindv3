@@ -13,16 +13,16 @@ function Contact() {
           I would love to hear from you! Whether you have a project idea, a question, or just want to chat, feel free to reach out.
         </p>
         <div className='flex flex-row flex-wrap w-full justify-evenly items-center'>
-          <a title='Email' className='flex items-center h-14 w-14 mb-3.5' href='mailto:mayanklad12@gmail.com' target='_blank' rel='noreferrer'>
+          <a title='Email' className='flex items-center h-10 w-10 mb-3.5' href='mailto:mayanklad12@gmail.com' target='_blank' rel='noreferrer'>
             <img className='m-0' src={emailIcon} alt='Email' />
           </a>
-          <a title='LinkedIn' className='flex items-center h-14 w-14 mb-3.5' href='https://www.linkedin.com/in/mayank-lad-602568151/' target='_blank' rel='noreferrer'>
+          <a title='LinkedIn' className='flex items-center h-10 w-10 mb-3.5' href='https://www.linkedin.com/in/mayank-lad-602568151/' target='_blank' rel='noreferrer'>
             <img className='m-0' src={linkedInIcon} alt='LinkedIn' />
           </a>
-          <a title='Github' className='flex items-center h-14 w-14 mb-3.5' href='https://github.com/mayanklad' target='_blank' rel='noreferrer'>
+          <a title='Github' className='flex items-center h-10 w-10 mb-3.5' href='https://github.com/mayanklad' target='_blank' rel='noreferrer'>
             <img className='m-0' src={githubIcon} alt='Github' />
           </a>
-          <a title='Instagram' className=' flex items-center h-14 w-14 mb-3.5' href='https://www.instagram.com/mayank__lad/' target='_blank' rel='noreferrer'>
+          <a title='Instagram' className=' flex items-center h-10 w-10 mb-3.5' href='https://www.instagram.com/mayank__lad/' target='_blank' rel='noreferrer'>
             <img className='m-0' src={instagramIcon} alt='Instagram' />
           </a>
         </div>
