@@ -49,7 +49,7 @@ function Portfolio() {
                 ></img>
                 <div className='absolute w-full h-full bg-[#5988ff] -z-10 opacity-70 md:opacity-0 md:group-hover:opacity-70 md:transition md:duration-500 md:ease-in'></div>
                 <div className='flex flex-col p-5 w-full h-full items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 md:transition md:duration-500 md:ease-in'>
-                  <div className='text-center'>{project.name}</div>
+                  <div className='text-center text-white text-lg'>{project.name}</div>
                 </div>
               </a>
             );
