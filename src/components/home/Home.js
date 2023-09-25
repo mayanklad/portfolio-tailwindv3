@@ -26,7 +26,7 @@ function Home() {
           backgroundPosition: 'left'
         }}
       >
-        <div className='headings-container w-fit h-fit mx-5'>
+        <div className='headings-container w-fit h-fit mx-5 bg-[#f0f8ffcc] px-5'>
           <h3 className='w-fit'>Hi, I'm</h3>
           <h1 className='w-fit'>Mayank Lad</h1>
           <h2 className='w-fit'>Building Better World One Syntax at a Time</h2>
