@@ -2,6 +2,7 @@ import './contact.css';
 import emailIcon from 'assets/images/email-icon.svg'
 import linkedInIcon from 'assets/images/linkedin-icon.svg'
 import githubIcon from 'assets/images/github-icon.svg'
+import kaggleIcon from 'assets/images/kaggle-icon.svg'
 import instagramIcon from 'assets/images/instagram-icon.svg'
 
 function Contact() {  
@@ -21,6 +22,9 @@ function Contact() {
           </a>
           <a title='Github' className='flex items-center h-10 w-10 mb-3.5' href='https://github.com/mayanklad' target='_blank' rel='noreferrer'>
             <img className='m-0' src={githubIcon} alt='Github' />
+          </a>
+          <a title='Kaggle' className='flex items-center h-10 w-10 mb-3.5' href='https://www.kaggle.com/mayanklad' target='_blank' rel='noreferrer'>
+            <img className='m-0' src={kaggleIcon} alt='Kaggle' />
           </a>
           <a title='Instagram' className=' flex items-center h-10 w-10 mb-3.5' href='https://www.instagram.com/mayank__lad/' target='_blank' rel='noreferrer'>
             <img className='m-0' src={instagramIcon} alt='Instagram' />
