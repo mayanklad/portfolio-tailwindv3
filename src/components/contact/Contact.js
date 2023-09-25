@@ -1,5 +1,5 @@
 import './contact.css';
-import emailIcon from 'assets/images/email-icon.svg'
+import emailIcon from 'assets/images/email-icon2.svg'
 import linkedInIcon from 'assets/images/linkedin-icon.svg'
 import githubIcon from 'assets/images/github-icon.svg'
 import kaggleIcon from 'assets/images/kaggle-icon.svg'
