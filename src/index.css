@@ -10,7 +10,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
-* {
+
+/* Visual CSS Debugging */
+/* * {
   box-sizing: border-box;
   background: rgb(0 100 0 / 0.1) !important;
-}
+} */
