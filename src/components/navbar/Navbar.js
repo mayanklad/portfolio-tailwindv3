@@ -1,7 +1,7 @@
 import './navbar.css';
 import React, { useState, useEffect }  from 'react';
 import { Bars3Icon } from '@heroicons/react/24/solid'
-import { MoonIcon } from '@heroicons/react/24/outline'
+// import { MoonIcon } from '@heroicons/react/24/outline'
 
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -46,9 +46,9 @@ function Navbar() {
         <button type='button' className='resume-button ml-2.5'>
           Resume
         </button>
-        <button type='button' className='theme-button ml-2.5'>
+        {/* <button type='button' className='theme-button ml-2.5'>
           <MoonIcon className='w-6 text-black' />
-        </button>
+        </button> */}
         <button type='button' className='menu-button ml-2.5' onClick={toggleNavbar}>
           <Bars3Icon className='w-6 text-black' />
         </button>

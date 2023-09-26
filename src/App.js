@@ -10,11 +10,11 @@ import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 
 function App() {
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
+  // if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  //   document.documentElement.classList.add('dark');
+  // } else {
+  //   document.documentElement.classList.remove('dark');
+  // }
   
   return (
     <div className="App h-screen overflow-y-auto prose-sm max-w-none">
