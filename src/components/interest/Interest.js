@@ -15,7 +15,7 @@ function Interest() {
         <div className='flex flex-col items-center my-4'>
           {interests.map((interest, index) => {
             return (
-              <div key={index}>{interest}</div>
+              <div key={index} className='my-4'>{interest}</div>
             );
           })}
         </div>
