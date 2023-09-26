@@ -27,7 +27,7 @@ function App() {
       <Certificate />
       <Portfolio />
       <Contact />
-      <footer className='footer-container px-2.5 pb-6 w-full bg-[#c4d6e2] text-center'>© 2023 Mayank Ashokkumar Lad</footer>
+      <footer className='footer-container px-2.5 pb-6 w-full bg-[#c4d6e2] text-center text-xs'>Made with ❤️ by Mayank Lad | © 2023. All Rights Reserved.</footer>
     </div>
   );
 }
