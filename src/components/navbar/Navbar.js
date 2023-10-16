@@ -2,7 +2,7 @@ import './navbar.css';
 import React, { useState, useEffect }  from 'react';
 import { Bars3Icon } from '@heroicons/react/24/solid'
 // import { MoonIcon } from '@heroicons/react/24/outline'
-import resume from 'assets/documents/resume/dummy.pdf';
+import resume from 'assets/documents/resume/Resume-Mayank_Lad.pdf';
 
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
