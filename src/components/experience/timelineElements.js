@@ -42,7 +42,7 @@ let timelineElements = [
     {
       id: 5,
       title: "Artificial Intelligence & Machine Learning",
-      location: "Lambton College, Toronto",
+      location: "Lambton College, Toronto, Canada",
       description:
         "Dove into impactful projects: Image Captioning Sentiment Analysis on Airbnb, House Description vs Characteristics, Google Play Store Case Study. Blending theory and hands-on application, these projects define my ongoing AI & Machine Learning journey at Lambton College.",
       buttonText: "College Projects",
