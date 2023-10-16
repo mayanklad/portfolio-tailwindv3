@@ -16,27 +16,27 @@ function Experience() {
     <div id='experience' className='experience-container px-2.5 py-6 w-full bg-[#c4d6e2]'>
       <h1 className='px-3.5 underline underline-offset-[12px]'>Experience</h1>
       <div className='content px-3.5 w-full flex flex-col items-center'>
-        <p className='w-full'>Computer science graduate looking to obtain the position of software developer. I want to work with an organization that can give me ample opportunities to grow so that i will be able to help in the growth of that organization and will be able to enhance my skills and my capabilities.</p>
-        
+        {/* <p className='w-full'>Computer science graduate looking to obtain the position of software developer. I want to work with an organization that can give me ample opportunities to grow so that i will be able to help in the growth of that organization and will be able to enhance my skills and my capabilities.</p> */}
+        <br/>
         <VerticalTimeline>
           {timelineElements.slice().reverse().map((element, index) => {
-            let isWorkIcon = element.icon === "work";
+            let isWorkIcon = element.icon === 'work';
 
             return (
               <VerticalTimelineElement
                 key={index}
                 date={element.date}
-                dateClassName="date"
+                dateClassName='date'
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                 icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h3 className='vertical-timeline-element-title'>
                   {element.title}
                 </h3>
-                <h5 className="vertical-timeline-element-subtitle">
+                <h5 className='vertical-timeline-element-subtitle'>
                   {element.location}
                 </h5>
-                <p className="description">{element.description}</p>
+                <p className='description'>{element.description}</p>
               </VerticalTimelineElement>
             );
           })}
