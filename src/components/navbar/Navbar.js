@@ -3,6 +3,7 @@ import React, { useState, useEffect }  from 'react';
 import { Bars3Icon } from '@heroicons/react/24/solid'
 // import { MoonIcon } from '@heroicons/react/24/outline'
 import resume from 'assets/documents/resume/Resume-Mayank_Lad.pdf';
+import logo from 'assets/images/logo512.png';
 
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -46,7 +47,8 @@ function Navbar() {
 
   return (
     <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-white justify-between items-center [transition:opacity_700ms,visibility_700ms] ${scrolling | isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
-      <span className='mx-5'>Logo</span>
+      {/* <span className='mx-5'>Logo</span> */}
+      <a className='ml-3 mr-5 h-3/4' href='#home'><img className='m-0 h-full' src={logo} alt='logo'></img></a>
       <nav className={`menu-container absolute top-[60px] w-full bg-white border-t border-solid [transition:opacity_700ms,visibility_700ms] ${isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
         <ul className='menu flex flex-col justify-evenly'>
           <li className='menu-item'><a href="#home"><b>Home</b></a></li>
