@@ -17,7 +17,7 @@ function App() {
   // }
   
   return (
-    <div className="App h-[100dvh] overflow-y-auto prose-sm max-w-none">
+    <div className="App h-[100dvh] overflow-y-auto prose-sm md:prose md:max-w-none">
       <Navbar />
       <Home />
       <About />
