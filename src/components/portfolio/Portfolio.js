@@ -29,7 +29,7 @@ function Portfolio() {
   // }, []);
 
   return (
-    <div id='projects' className='portfolio-container px-2.5 md:px-[8.3%] py-6 w-full'>
+    <div id='projects' className='portfolio-container px-2.5 md:px-[8.3%] xl:px-[16.6%] py-6 w-full'>
       <h1 className='px-3.5 underline underline-offset-[12px]'>Projects</h1>
       <div className='content px-3.5 w-full flex flex-col items-center'>
         <div className='flex flex-row flex-wrap my-4'>
