@@ -17,7 +17,7 @@ function Navbar() {
     const scrollElement = document.getElementsByClassName('App')[0];
 
     const scrollEventListner = () => {
-      console.log(scrollElement.scrollTop);
+      // console.log(scrollElement.scrollTop);
       const navbarContainer = document.getElementsByClassName('navbar-container')[0];
       if (scrollElement.scrollTop > navbarContainer.clientHeight) {
         setScrolling(true);
@@ -28,6 +28,25 @@ function Navbar() {
     };
 
     scrollElement.addEventListener('scroll', scrollEventListner);
+  });
+
+  useEffect(() => {
+    const menuButton = document.getElementById('menu-button');
+
+    const menuBtnDisplayPropObserver = new ResizeObserver(() => {
+      const displayPropValue = menuButton.computedStyleMap().get('display').value;
+      
+      if (displayPropValue === 'none' && isNavbarOpen) {
+        toggleNavbar();
+      }
+    });
+
+    menuBtnDisplayPropObserver.observe(menuButton);
+
+    // Cleanup the observer when the component unmounts
+    return () => {
+      menuBtnDisplayPropObserver.disconnect();
+    };
   });
 
   const hireOnClick = () => {
@@ -47,21 +66,23 @@ function Navbar() {
 
   return (
     <header className={`navbar-container absolute flex flex-row w-full h-[60px] bg-white justify-between items-center [transition:opacity_700ms,visibility_700ms] ${scrolling | isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
-      {/* <span className='mx-5'>Logo</span> */}
-      <a className='not-prose ml-3 mr-5 h-3/4' href='#home'><img className='h-full' src={logo} alt='logo'></img></a>
-      <nav className={`menu-container absolute top-[60px] w-full bg-white border-t border-solid [transition:opacity_700ms,visibility_700ms] ${isNavbarOpen ? 'opacity-100 z-10 visible' : 'opacity-0 collapse'}`}>
-        <ul className='menu flex flex-col justify-evenly'>
-          <li className='menu-item'><a href="#home"><b>Home</b></a></li>
-          <li className='menu-item'><a href="#about"><b>About</b></a></li>
-          <li className='menu-item'><a href="#projects"><b>Projects</b></a></li>
-          <li className='menu-item'><a href="#contact"><b>Contact</b></a></li>
+      <a className='not-prose ml-3 mr-5 h-3/4 aspect-square' href='#home'><img className='h-full' src={logo} alt='logo'></img></a>
+      <nav className={`menu-container not-prose max-lg:absolute lg:flex lg:justify-center max-lg:top-[60px] w-full max-lg:bg-white max-lg:border-y max-lg:border-solid max-lg:[transition:opacity_700ms,visibility_700ms] ${isNavbarOpen ? 'max-lg:opacity-100 max-lg:z-10 max-lg:visible' : 'max-lg:opacity-0 max-lg:collapse'}`}>
+        <ul className='menu flex flex-col lg:flex-row max-lg:my-3 max-lg:mx-12 text-center'>
+          <li className='menu-item lg:border-r'><a className='block max-lg:pb-3 max-lg:pt-3 lg:px-4' href="#home"><b>Home</b></a></li>
+          <li className='menu-item max-lg:border-t lg:border-r'><a className='block max-lg:pb-3 max-lg:pt-3 lg:px-4' href='#about'><b>About</b></a></li>
+          <li className='menu-item max-lg:border-t lg:border-r'><a className='block max-lg:pb-3 max-lg:pt-3 lg:px-4' href='#experience'><b>Experience</b></a></li>
+          <li className='menu-item max-lg:border-t lg:border-r'><a className='block max-lg:pb-3 max-lg:pt-3 lg:px-4' href='#interests'><b>Interests</b></a></li>
+          <li className='menu-item max-lg:border-t lg:border-r'><a className='block max-lg:pb-3 max-lg:pt-3 lg:px-4' href='#skills'><b>Skills</b></a></li>
+          <li className='menu-item max-lg:border-t lg:border-r'><a className='block max-lg:pb-3 max-lg:pt-3 lg:px-4' href='#projects'><b>Projects</b></a></li>
+          <li className='menu-item max-lg:border-t'><a className='block max-lg:pb-3 max-lg:pt-3 lg:px-4' href='#contact'><b>Contact</b></a></li>
         </ul>
       </nav>
       <div className='buttons-container flex flex-row items-center mx-5'>
         <button
           type='button'
           onClick={hireOnClick}
-          className='hire-button bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'
+          className='hire-button bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded whitespace-nowrap'
         >
           Hire me
         </button>
@@ -76,7 +97,7 @@ function Navbar() {
         {/* <button type='button' className='theme-button ml-2.5'>
           <MoonIcon className='w-6 text-black' />
         </button> */}
-        <button type='button' className='menu-button ml-2.5' onClick={toggleNavbar}>
+        <button id='menu-button' type='button' className='menu-button lg:hidden ml-2.5' onClick={toggleNavbar}>
           <Bars3Icon className='w-6 text-black' />
         </button>
       </div>
