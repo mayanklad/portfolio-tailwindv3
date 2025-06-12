@@ -2,13 +2,13 @@
 
 Welcome to my digital playground! 🚀 This is not just a website; it's a journey through my coding universe. Strap in and let's take a tour together!
 
-### 🖥️ [Live Demo](https://mayanklad.netlify.app/)
+### 🖥️ [Live Demo](https://mayanklad-portfolio-old.netlify.app/)
 
 Behold, the magic is live! Take a stroll through my portfolio, meticulously crafted with React and dressed up in the latest Tailwind CSS fashion.
 
 ### 🚀 Hosted on Netlify
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b1d785fe-0947-4dc4-9456-346a6c9b5b14/deploy-status)](https://app.netlify.com/sites/mayanklad/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b1d785fe-0947-4dc4-9456-346a6c9b5b14/deploy-status)](https://app.netlify.com/projects/mayanklad-portfolio-old/deploys)
 
 This masterpiece is not just a static webpage; it's a dynamic creation living its best life on Netlify! Every push to this repo triggers a symphony of automated deployment, thanks to Netlify's enchanting powers.
 
